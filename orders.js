@@ -63,6 +63,8 @@ console.log(newTick.updateStatus(15))
 
 //CODE HERE
 
+const firtsTicket = new Ticket(("pizza, bread, soda"), '7:03 PM', 575)
+console.log(firtsTicket)
 
 /*
     Call the `updateStatus` method on
@@ -71,3 +73,4 @@ console.log(newTick.updateStatus(15))
 */
 
 //CODE HERE
+console.log(firtsTicket.updateStatus('cooking'))
