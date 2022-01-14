@@ -99,7 +99,13 @@ console.log(property)
 */
 
 //CODE HERE
-
+let foodArr = [ {pname: 'Peperoni', 
+                price: 15,
+                category:'Hot and ready',
+                popularity: 8, 
+                rating: 9.23,
+                tags: ['vegan', 'gluten free']
+            }]
 
 
 //////////////////PROBLEM 4////////////////////
@@ -115,9 +121,14 @@ console.log(property)
 */
 
 //CODE HERE
+// const filteredTags = pizza.filter(function(tag){
+//     return tag.tags = 'kids'
+// })
 
-// const filteredFood = foodArr.filter(/* CALLBACK HERE */)
+// console.log(filteredTags)
 
+const filteredFood = foodArr.filter(el => el.tags === 'vegan')
+console.log(filteredFood)
 
 
 //////////////////PROBLEM 5////////////////////
