@@ -82,7 +82,15 @@ console.log(canWeDeliver(85205))
 */
 
 // CODE HERE
+function canWeDeliverTwo(zipCode){
+    if(zipCode.includes() === deliveryAreaZipCodes){
+        return "You are in the delivery zone!"
+    } else {
+        return "Sorry, we don't deliver there"
+    }
+}
 
+console.log(canWeDeliver(85205))
 
 //////////////////PROBLEM 3////////////////////
 /* 
