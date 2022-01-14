@@ -87,6 +87,11 @@ console.log(calcFinalPrice(40, 10, .05))
 /*
     TEXT ANSWER HERE
 
+    Phone number: The restaurant would need this to contact the customer about any communications. NUMBER data type you just need their number
+    address: So the restaurant knows where to deliver. String data type because it will take in numbers and letters.
+    name: so the restaurant knows the customers name so they give them the right order. String DT 
+    Card information: So the restaurant can get there payment. String DT because this will contain numbers and letters. Unless you have different area feilds for them.
+
 */
 
 /*
@@ -95,3 +100,9 @@ console.log(calcFinalPrice(40, 10, .05))
 */
 
 //CODE HERE
+let customer = {
+    phone: 8015984226,
+    address: "3121 Morgan Valley Dr.",
+    name: 'Hal',
+    cardNum: "Hal Dickson 777-777-777-777"
+}
