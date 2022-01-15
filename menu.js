@@ -105,7 +105,15 @@ let foodArr = [ {pname: 'Peperoni',
                 popularity: 8, 
                 rating: 9.23,
                 tags: ['vegan', 'gluten free']
-            }]
+            },
+            {pname: 'cheese', 
+            price: 4,
+            category:'Hot and ready',
+            popularity: 5, 
+            rating: 7,
+            tags: ['kids', 'gluten free']
+            }
+        ]
 
 
 //////////////////PROBLEM 4////////////////////
@@ -122,13 +130,14 @@ let foodArr = [ {pname: 'Peperoni',
 
 //CODE HERE
 // const filteredTags = pizza.filter(function(tag){
-//     return tag.tags = 'kids'
+//     return tag.tags.includes('kids')
 // })
 
 // console.log(filteredTags)
 
-const filteredFood = foodArr.filter(el => el.tags === 'vegan')
-console.log(filteredFood)
+const filteredFood = foodArr.filter(el => el.tags.includes('vegan') )
+// console.log(filteredFood)
+
 
 
 //////////////////PROBLEM 5////////////////////
@@ -171,7 +180,16 @@ console.log(filteredFood)
 */
 
 //CODE HERE
+function filterByProperty(property, number, type){
+    let filtered = foodArr.filter(function(obj){
+        if(type === 'above'){
+            return obj[property] > number
+        } else if(type === 'below'){
+            return obj[property] < number        }
+    })
 
+    return filtered;
+}
 
 /*
     Invoke the `filterByProperty` function passing
@@ -181,3 +199,7 @@ console.log(filteredFood)
 */
 
 //CODE HERE
+
+console.log(filterByProperty('price', 5, 'below'))
+
+console.log(filterByProperty('price', 5, 'above'))
