@@ -127,7 +127,16 @@ const deals = [
 
 //CODE HERE
 
+for(let i = 0; i < deals.length; i++){
+    deals[i] = deals[i].title.replace(15, 10)
+}
 
+// console.log(deals)
+
+
+
+deals[0].title = deals[0].title.replace('15', '10')
+console.log(deals)
 
 /*
     The restaurant is going to continue its
@@ -143,3 +152,12 @@ const deals = [
 */
 
 //CODE HERE
+
+for(let i = 0; i < deals.length; i++){
+    deals[i] = deals[i].desc.replace('March', 'April')
+}
+
+// console.log(deals)
+
+deals[1].desc = deals[1].desc.replace('March', 'April')
+console.log(deals)
